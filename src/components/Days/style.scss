@@ -1,0 +1,20 @@
+$background: #C3C3C3;
+
+.days {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: 10px;
+
+    &__button {
+        background-color: $background;
+        flex-basis: percentage(1/7);
+        border: 1px solid lighten($background, 5);
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+    }
+
+    &__button:hover {
+        background-color: darken($background, 5);
+    }
+}

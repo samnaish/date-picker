@@ -1,0 +1,27 @@
+{
+  "name": "date-picker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samnaish/date-picker.git"
+  },
+  "author": "Sam Naish",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samnaish/date-picker/issues"
+  },
+  "homepage": "https://github.com/samnaish/date-picker#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.24.0"
+  },
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}
