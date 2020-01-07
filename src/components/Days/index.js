@@ -7,7 +7,7 @@ const getNumDays = (month) => {
     return new Date(today.getFullYear(), month + 1, 0).getDate();
 }
 
-const Days = ({month}) => {
+const Days = ({month, onDayClick}) => {
 
     const numDays = getNumDays(month);
     
@@ -15,7 +15,7 @@ const Days = ({month}) => {
         <div className="days">
             {
                 [...Array(numDays)].map((day, index) => {
-                    return <button className="days__button" type="button" key={index}>{index + 1}</button>
+                    return <button className="days__button" onClick={() => onDayClick(index + 1)} type="button" key={index}>{index + 1}</button>
                 })
             }
         </div>

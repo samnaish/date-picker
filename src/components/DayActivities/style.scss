@@ -1,0 +1,36 @@
+.todo {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+    }
+      
+      &__item-container {
+        list-style: none;
+        padding: 0;
+        line-height: 2rem;
+        width: 500px;
+      }
+      
+      &__input {
+        border: none;
+        background: transparent;
+        color: black;
+        font-size: 1.4rem;
+        outline: none;
+        width: 100%;
+      }
+
+  }
+  
+  .todo-is-completed .checkbox {
+    color: #000;
+    background: #fff;
+  }
+  
+  .todo-is-completed input {
+    text-decoration: line-through;
+  }

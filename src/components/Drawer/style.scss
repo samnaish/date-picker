@@ -1,0 +1,39 @@
+$background: #CDD5D1;
+
+.drawer {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    transform: translateX(100%);
+    background-color: lighten($background, 5);
+    transition: transform 0.3s ease;
+    box-shadow: -5px -5px 8px #666;
+
+    &__button {
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        margin: 10px 0;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+        background-color: rgb(199, 134, 145);
+        border-radius: 50%;
+        outline: none;
+        transition: background-color 0.3s ease;
+    }
+
+    &__button:hover {
+        background-color: rgb(117, 115, 115);
+        color: white;
+    }
+
+}
+
+.drawer--open {
+    transform: translateX(0);
+}
